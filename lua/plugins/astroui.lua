@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
@@ -16,6 +16,9 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
+        LspReferenceRead = { fg = "", bg = "#666666" },
+        LspReferenceText = { fg = "", bg = "#666666" },
+        LspReferenceWrite = { fg = "", bg = "#666666" },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },

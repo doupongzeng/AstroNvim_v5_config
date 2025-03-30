@@ -76,7 +76,7 @@ return {
         },
         ["<C-n>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
         ["<leader>4"] = { "<cmd>ClangdSwitchSourceHeader<cr>", desc = "Switch src/hdr" },
-        ["<leader>tt"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "ToggleTerm float default" },
+        -- ["<leader>tt"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "ToggleTerm float default" },
         ["<leader>lH"] = {
           function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled {}) end,
           desc = "Toggle inlay_hint",
@@ -94,10 +94,10 @@ return {
       v = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
-        ["<C-_>"] = {
-          "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
-          desc = "Toggle comment for selection",
-        },
+        -- ["<C-_>"] = {
+        --   "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
+        --   desc = "Toggle comment for selection",
+        -- },
       },
     },
   },

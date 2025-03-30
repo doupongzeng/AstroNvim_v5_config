@@ -69,12 +69,13 @@ return {
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = false },
 
-  {"CopilotC-Nvim/CopilotChat.nvim",
-     opts = function(_, opts)
-       opts.model = "claude-3.7-sonnet"
-       return opts
-     end,
-   },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    opts = function(_, opts)
+      opts.model = "claude-3.7-sonnet"
+      return opts
+    end,
+  },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {

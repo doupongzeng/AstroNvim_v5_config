@@ -20,4 +20,5 @@ return {
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
   { import = "astrocommunity.completion.copilot-vim-cmp" },
   { import = "astrocommunity.completion.copilot-vim" },
+  { import = "astrocommunity.recipes.vscode-icons" },
 }
